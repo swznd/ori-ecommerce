@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Machined Pen",
+    "color": "Black",
+    "price": "Rp 150.000",
+    "imageSrc": "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-product-01.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hasami Porcelain Mug",
+    "color": "Brown",
+    "price": "Rp 200.000",
+    "imageSrc": "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-product-02.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Discbound Heirloom Journal Bundle",
+    "color": "Silver",
+    "price": "Rp 500.000",
+    "imageSrc": "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-product-03.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Discbound Heirloom Journal",
+    "color": "Gray",
+    "price": "Rp 350.000",
+    "imageSrc": "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-product-04.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Craighill Match Striker",
+    "color": "Black",
+    "price": "Rp 700.000",
+    "imageSrc": "https://ugmonk.com/cdn/shop/products/Craighill_match-striker-2-299919_1480x1836_crop_center.jpg?v=1690906872"
+  },
+  {
+    "id": 6,
+    "name": "15 Minute Hourglass",
+    "color": "Amber",
+    "price": "Rp 250.000",
+    "imageSrc": "https://ugmonk.com/cdn/shop/products/hourglass-4-234280_1480x1836_crop_center.jpg?v=1690906713"
+  },
+  {
+    "id": 7,
+    "name": "Lemnos SOSO Clock",
+    "color": "Orange",
+    "price": "Rp 600.000",
+    "imageSrc": "https://ugmonk.com/cdn/shop/products/lemnos-orange-1_c9fd4341-0b7c-4554-80ab-1052f2012a69-140138_1480x1836_crop_center.jpg?v=1690907007"
+  },
+  {
+    "id": 8,
+    "name": "Hightide Cooler Cargo Bag",
+    "color": "Dark Brown",
+    "price": "Rp 300.000",
+    "imageSrc": "https://ugmonk.com/cdn/shop/products/khaki-medium-main-570332_1480x1836_crop_center.jpg?v=1690906963"
+  }
+]
