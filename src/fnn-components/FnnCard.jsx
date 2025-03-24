@@ -1,17 +1,13 @@
 import { useState, useMemo } from 'react';
+import { getSelectedVariant } from '@/utils/getSelectedVariant';
 
 const FnnCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(
     product.variants?.[0]?.color || 'Default Color',
   ); // Warna default
 
-  // Optimasi: Hanya cari varian baru jika selectedColor berubah
   const selectedVariant = useMemo(() => {
-    return (
-      product.variants?.find((variant) => variant.color === selectedColor) ||
-      product.variants?.[0] ||
-      {}
-    );
+    return getSelectedVariant(product.variants, selectedColor);
   }, [selectedColor, product.variants]);
 
   return (
