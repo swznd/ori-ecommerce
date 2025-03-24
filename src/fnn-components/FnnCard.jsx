@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { getSelectedVariant } from '@/utils/getSelectedVariant';
 import ProductImage from '@/fnn-components/ProductImage';
 import ProductTitle from '@/fnn-components/ProductTitle';
+import ProductPrice from '@/fnn-components/ProductPrice';
 
 const FnnCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(
@@ -45,22 +46,7 @@ const FnnCard = ({ product }) => {
         </ul>
 
         {/* Menampilkan Harga atau Harga Diskon */}
-        <div className="flex flex-wrap items-start gap-2">
-          {product.price_sale ? (
-            <>
-              <p className="text-xl text-gray-700">
-                ¥{product.price_sale.toLocaleString('en-US')}
-              </p>
-              <p className="text-sm text-red-500 line-through">
-                ¥{product.price.toLocaleString('en-US')}
-              </p>
-            </>
-          ) : (
-            <p className="text-xl text-gray-700">
-              ¥{product.price ? product.price.toLocaleString('en-US') : 'N/A'}
-            </p>
-          )}
-        </div>
+        <ProductPrice price={product.price} salePrice={product.price_sale} />
 
         {/* Tampilkan status stok */}
         {selectedVariant?.quantity === 0 ? (
