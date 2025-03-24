@@ -3,6 +3,7 @@ import { getSelectedVariant } from '@/utils/getSelectedVariant';
 import ProductImage from '@/fnn-components/ProductImage';
 import ProductTitle from '@/fnn-components/ProductTitle';
 import ProductPrice from '@/fnn-components/ProductPrice';
+import ProductStockStatus from '@/fnn-components/ProductStockStatus';
 
 const FnnCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(
@@ -49,13 +50,7 @@ const FnnCard = ({ product }) => {
         <ProductPrice price={product.price} salePrice={product.price_sale} />
 
         {/* Tampilkan status stok */}
-        {selectedVariant?.quantity === 0 ? (
-          <p className="text-sm text-red-600">Sold Out</p>
-        ) : selectedVariant?.quantity < 5 ? (
-          <p className="text-sm text-red-600">
-            Only {selectedVariant.quantity} Left in Stock!
-          </p>
-        ) : null}
+        <ProductStockStatus quantity={selectedVariant?.quantity} />
       </div>
     </div>
   );
