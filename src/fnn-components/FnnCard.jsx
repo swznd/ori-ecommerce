@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { getSelectedVariant } from '@/utils/getSelectedVariant';
 import ProductImage from '@/fnn-components/ProductImage';
+import ProductTitle from '@/fnn-components/ProductTitle';
 
 const FnnCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(
@@ -15,13 +16,10 @@ const FnnCard = ({ product }) => {
     <div className="flex w-full cursor-pointer flex-col gap-3">
       <div className="flex flex-col gap-2">
         <ProductImage src={selectedVariant?.images?.[0]} alt={product.name} />
-        <div className="flex flex-col">
-          {/* Menampilkan kategori */}
-          <p className="text-sm tracking-wide text-gray-500">
-            {product.details?.category || 'Uncategorized'}
-          </p>
-          <h3 className="font-medium">{product.name || 'Unknown Product'}</h3>{' '}
-        </div>
+        <ProductTitle
+          category={product.details?.category}
+          name={product.name}
+        />
       </div>
 
       <div className="flex flex-col gap-2">
