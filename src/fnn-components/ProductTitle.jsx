@@ -1,5 +1,6 @@
 /**
  * Komponen untuk menampilkan kategori dan nama produk.
+ *
  * @param {string} category - Nama kategori produk.
  * @param {string} name - Nama produk.
  */

@@ -1,5 +1,9 @@
 /**
- * Komponen untuk menampilkan status stok produk berdasarkan jumlah.
+ * Komponen untuk menampilkan status stok produk berdasarkan quantity.
+ * - Tampilkan "Sold Out" jika quantity 0
+ * - Tampilkan "Only X Left in Stock!" jika quantity < 5
+ * - Tidak menampilkan apapun jika stok cukup
+ *
  * @param {number} quantity - Jumlah stok tersisa.
  */
 const ProductStockStatus = ({ quantity }) => {

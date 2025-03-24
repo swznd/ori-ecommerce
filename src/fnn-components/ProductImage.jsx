@@ -1,5 +1,6 @@
 /**
- * Komponen untuk menampilkan gambar produk dengan fallback image.
+ * Komponen untuk menampilkan gambar produk dengan fallback jika tidak ada gambar.
+ *
  * @param {string} src - URL gambar produk.
  * @param {string} alt - Alt text untuk gambar.
  */

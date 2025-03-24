@@ -1,9 +1,9 @@
 /**
  * Komponen untuk menampilkan harga produk.
- * Jika ada harga diskon, tampilkan keduanya.
+ * Menampilkan harga diskon jika tersedia, beserta harga asli yang dicoret.
  *
- * @param {number} price - Harga asli.
- * @param {number|null} salePrice - Harga diskon (jika ada).
+ * @param {number} price - Harga asli produk.
+ * @param {number|null} salePrice - Harga diskon produk (jika ada).
  */
 const ProductPrice = ({ price, salePrice }) => {
   const formattedPrice = price?.toLocaleString('en-US') ?? 'N/A';
