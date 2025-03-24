@@ -4,6 +4,7 @@ import ProductImage from '@/fnn-components/ProductImage';
 import ProductTitle from '@/fnn-components/ProductTitle';
 import ProductPrice from '@/fnn-components/ProductPrice';
 import ProductStockStatus from '@/fnn-components/ProductStockStatus';
+import FnnProductColorOptions from '@/fnn-components/FnnProductColorOptions';
 
 const FnnCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState(
@@ -30,21 +31,11 @@ const FnnCard = ({ product }) => {
         </p>
 
         {/* Warna yang tersedia */}
-        <h4 className="sr-only">Available colors</h4>
-        <ul role="list" className="flex flex-wrap space-x-2">
-          {product.variants?.map((variant) => (
-            <li
-              key={variant.color}
-              className={`size-5 cursor-pointer rounded-full border border-black/10 transition ${
-                selectedColor === variant.color ? 'ring-1 ring-slate-500' : ''
-              }`}
-              style={{ backgroundColor: variant.colorBg }}
-              onClick={() => setSelectedColor(variant.color)}
-            >
-              <span className="sr-only">{variant.color}</span>
-            </li>
-          )) || <p className="text-red-500">No variants available</p>}
-        </ul>
+        <FnnProductColorOptions
+          variants={product.variants}
+          selectedColor={selectedColor}
+          onSelectColor={setSelectedColor}
+        />
 
         {/* Menampilkan Harga atau Harga Diskon */}
         <ProductPrice price={product.price} salePrice={product.price_sale} />
