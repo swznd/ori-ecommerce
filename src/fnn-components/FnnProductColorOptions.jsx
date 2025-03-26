@@ -24,7 +24,7 @@ const FnnProductColorOptions = ({
         {variants.map((variant) => (
           <li
             key={variant.color}
-            className={`size-5 cursor-pointer rounded-full border border-black/10 transition ${
+            className={`rounded-selector size-5 cursor-pointer border border-black/10 transition ${
               selectedColor === variant.color ? 'ring-1 ring-slate-500' : ''
             }`}
             style={{ backgroundColor: variant.colorBg }}

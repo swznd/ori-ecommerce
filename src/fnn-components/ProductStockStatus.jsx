@@ -8,12 +8,12 @@
  */
 const ProductStockStatus = ({ quantity }) => {
   if (quantity === 0) {
-    return <p className="text-sm text-red-600">Sold Out</p>;
+    return <p className="text-warning text-sm">Sold Out</p>;
   }
 
   if (quantity < 5) {
     return (
-      <p className="text-sm text-red-600">Only {quantity} Left in Stock!</p>
+      <p className="text-warning text-sm">Only {quantity} Left in Stock!</p>
     );
   }
 

@@ -14,7 +14,7 @@ const ProductPrice = ({ price, salePrice }) => {
       {salePrice ? (
         <>
           <p className="text-xl text-gray-700">¥{formattedSalePrice}</p>
-          <p className="text-sm text-red-500 line-through">¥{formattedPrice}</p>
+          <p className="text-warning text-sm line-through">¥{formattedPrice}</p>
         </>
       ) : (
         <p className="text-xl text-gray-700">¥{formattedPrice}</p>

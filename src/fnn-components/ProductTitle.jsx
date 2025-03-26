@@ -7,10 +7,10 @@
 const ProductTitle = ({ category, name }) => {
   return (
     <div className="flex flex-col">
-      <p className="text-sm tracking-wide text-gray-500">
+      <p className="text-sm tracking-wide text-neutral-500">
         {category || 'Uncategorized'}
       </p>
-      <h3 className="font-medium">{name || 'Unknown Product'}</h3>
+      <h3 className="text-neutral font-medium">{name || 'Unknown Product'}</h3>
     </div>
   );
 };

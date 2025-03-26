@@ -11,7 +11,7 @@ const ProductImage = ({ src, alt }) => {
     <img
       src={imageSrc}
       alt={alt}
-      className="aspect-square object-cover transition-opacity duration-200 hover:opacity-80"
+      className="rounded-field aspect-square object-cover transition-opacity duration-200 hover:opacity-80"
     />
   );
 };
