@@ -1,8 +1,9 @@
 import products from '@/data/x.json';
 import FnnCard from '@/fnn-components/FnnCard';
 
-const FnnListProducts = ({ filter = {} }) => {
+const FnnListProducts = ({ filter = {}, className }) => {
   const { limit, category, sale } = filter;
+
   let filteredProducts = products;
 
   if (category) {
@@ -21,8 +22,12 @@ const FnnListProducts = ({ filter = {} }) => {
     ? filteredProducts.slice(0, limit)
     : filteredProducts;
 
+  // ✅ Default grid style
+  const defaultGridClass =
+    'grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5';
+
   return (
-    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    <div className={className ?? defaultGridClass}>
       {displayedProducts.map((product) => (
         <FnnCard key={product.id} product={product} />
       ))}
