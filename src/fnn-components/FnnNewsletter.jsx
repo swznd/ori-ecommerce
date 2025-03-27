@@ -25,7 +25,7 @@ function FnnNewsletter() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-box bg-secondary/10 flex w-full flex-col items-center justify-center gap-6 px-6 py-14 text-center"
+      className="rounded-box bg-secondary/10 flex w-full flex-col items-center justify-center gap-6 px-6 py-32 text-center"
     >
       {/* Heading */}
       <div className="flex max-w-xl flex-col items-center gap-4">

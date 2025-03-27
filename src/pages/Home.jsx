@@ -30,7 +30,7 @@ function Home() {
             See more
           </a>
         </div>
-        <FnnListProducts filter={{ category: 'Sanrio', limit: 5 }} />
+        <FnnListProducts filter={{ category: 'Kawaii', limit: 5 }} />
       </section>
       <section className="py-14">
         <FnnNewsletter />

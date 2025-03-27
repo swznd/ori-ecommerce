@@ -261,5 +261,528 @@
       "category": "Disney"
     },
     "created_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Saxoxo xo Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Rainbow",
+        "colorBg": "#FF69B4",
+        "sku": "222-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/saxo-1-pink.jpg"]
+      },
+      {
+        "color": "Ocean",
+        "colorBg": "#007bff",
+        "sku": "222-87654-02",
+        "quantity": 1,
+        "images": ["/images/products/saxo-1-blue.jpg"]
+      },
+      {
+        "color": "Sunset",
+        "colorBg": "#eeaf61",
+        "sku": "222-87654-03",
+        "quantity": 4,
+        "images": ["/images/products/saxo-1-orange.jpg"]
+      }
+    ],
+    "price": 9000,
+    "price_sale": null,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Kawaii"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Fufruit Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Green",
+        "colorBg": "#c1ff72",
+        "sku": "kj11-87654-01",
+        "quantity": 3,
+        "images": ["/images/products/fufruit-1-green.jpg"]
+      },
+      {
+        "color": "Black",
+        "colorBg": "#000000",
+        "sku": "kj11-87654-02",
+        "quantity": 13,
+        "images": ["/images/products/fufruit-1-black.jpg"]
+      },
+      {
+        "color": "Brown",
+        "colorBg": "#ca8417",
+        "sku": "kj11-87654-03",
+        "quantity": 4,
+        "images": ["/images/products/fufruit-1-brown.jpg"]
+      }
+    ],
+    "price": 2000,
+    "price_sale": 1900,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Kawaii"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Moza Relia Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Pink",
+        "colorBg": "#ff66c4",
+        "sku": "piknk212-87654-01",
+        "quantity": 13,
+        "images": ["/images/products/moz-1-pink.jpg"]
+      },
+      {
+        "color": "Purple",
+        "colorBg": "#8c52ff",
+        "sku": "kj11-87654-02",
+        "quantity": 3,
+        "images": ["/images/products/moz-1-purple.jpg"]
+      },
+      {
+        "color": "Red",
+        "colorBg": "#d11827",
+        "sku": "kj11-87654-03",
+        "quantity": 2,
+        "images": ["/images/products/moz-1-red.jpg"]
+      },
+      {
+        "color": "Black",
+        "colorBg": "#000000",
+        "sku": "kj11-87654-04",
+        "quantity": 2,
+        "images": ["/images/products/moz-1-black.jpg"]
+      }
+    ],
+    "price": 22000,
+    "price_sale": null,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Kawaii"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Pudding C Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Brown",
+        "colorBg": "#c89116",
+        "sku": "bbs22-87654-01",
+        "quantity": 7,
+        "images": ["/images/products/pudding-1-brown.jpg"]
+      }
+    ],
+    "price": 1000,
+    "price_sale": 990,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Sanrio"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Gold Jar Fish C Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Green",
+        "colorBg": "#7ed957",
+        "sku": "ggoollll22212-87654-01",
+        "quantity": 7,
+        "images": ["/images/products/goldjarfish-1-green.jpg"]
+      },
+      {
+        "color": "Black",
+        "colorBg": "#000000",
+        "sku": "ggoollll22212-87654-02",
+        "quantity": 7,
+        "images": ["/images/products/goldjarfish-1-black.jpg"]
+      }
+    ],
+    "price": 1000,
+    "price_sale": 990,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "San-X"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Croc Bow Cute Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Black",
+        "colorBg": "#000000",
+        "sku": "cc3-87654-01",
+        "quantity": 2,
+        "images": ["/images/products/crocbow-1-black.jpg"]
+      },
+      {
+        "color": "Pink",
+        "colorBg": "#f691b4",
+        "sku": "cc3-87654-02",
+        "quantity": 7,
+        "images": ["/images/products/crocbow-1-pink.jpg"]
+      }
+    ],
+    "price": 2200,
+    "price_sale": 1990,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Je Lips Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Green",
+        "colorBg": "#7ed957",
+        "sku": "jera121-87654-01",
+        "quantity": 3,
+        "images": ["/images/products/giraffe-1-green.jpg"]
+      }
+    ],
+    "price": 1200,
+    "price_sale": 1190,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Capybara Skut Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Brown",
+        "colorBg": "#ffbd59",
+        "sku": "cap3-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/capy-1-brown.jpg"]
+      },
+      {
+        "color": "Yellow",
+        "colorBg": "#ffde59",
+        "sku": "cap3-87654-02",
+        "quantity": 1,
+        "images": ["/images/products/capy-1-yellow.jpg"]
+      }
+    ],
+    "price": 900,
+    "price_sale": null,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nickelodeon"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Grand Mama and Dragon Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Red",
+        "colorBg": "#eb391b",
+        "sku": "cap3-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/grandma-1-red.jpg"]
+      }
+    ],
+    "price": 100,
+    "price_sale": null,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Disney"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 18,
+    "name": "King Betta Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Gray",
+        "colorBg": "#d9d9d9",
+        "sku": "kingbett221-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/betta-1-gray.jpg"]
+      }
+    ],
+    "price": 1090,
+    "price_sale": 999,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "San-X"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 19,
+    "name": "Corny Honey Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Purple",
+        "colorBg": "#ffa9f9",
+        "sku": "coroneo1-87654-01",
+        "quantity": 0,
+        "images": ["/images/products/corn-1-purple.jpg"]
+      },
+      {
+        "color": "Orange",
+        "colorBg": "#ff914d",
+        "sku": "coroneo1-87654-02",
+        "quantity": 1,
+        "images": ["/images/products/corn-1-yellow.jpg"]
+      }
+    ],
+    "price": 9990,
+    "price_sale": null,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Vcrab Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Purple",
+        "colorBg": "#8c52ff",
+        "sku": "crabob0-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/crab-1-purple.jpg"]
+      },
+      {
+        "color": "Red",
+        "colorBg": "#f34c31",
+        "sku": "crabob0-87654-02",
+        "quantity": 9,
+        "images": ["/images/products/crab-1-red.jpg"]
+      }
+    ],
+    "price": 8990,
+    "price_sale": 7800,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 21,
+    "name": "Cactus w/ Eyes Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Khaki",
+        "colorBg": "#d1b958",
+        "sku": "m289-87654-01",
+        "quantity": 2,
+        "images": ["/images/products/cactus-1-khaki.jpg"]
+      },
+      {
+        "color": "Green",
+        "colorBg": "#7f9665",
+        "sku": "m289-87654-02",
+        "quantity": 9,
+        "images": ["/images/products/cactus-1-green.jpg"]
+      }
+    ],
+    "price": 5000,
+    "price_sale": 4800,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Kawaii"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 22,
+    "name": "Kangaroo Boom Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Brown",
+        "colorBg": "#f5cd9b",
+        "sku": "m28sskan9-87654-01",
+        "quantity": 4,
+        "images": ["/images/products/kangaroo-1-brown.jpg"]
+      }
+    ],
+    "price": 5000,
+    "price_sale": 4800,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Kawaii"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 23,
+    "name": "Papua S Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Green",
+        "colorBg": "#888b35",
+        "sku": "ppgs1010-87654-01",
+        "quantity": 5,
+        "images": ["/images/products/papua-1-green.jpg"]
+      }
+    ],
+    "price": 2500,
+    "price_sale": 2100,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 24,
+    "name": "Butter X Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Yellow",
+        "colorBg": "#ffde59",
+        "sku": "bb7-87654-01",
+        "quantity": 1,
+        "images": ["/images/products/butter-1-yellow.jpg"]
+      },
+      {
+        "color": "Blue",
+        "colorBg": "#0cc0df",
+        "sku": "bb7-87654-02",
+        "quantity": 0,
+        "images": ["/images/products/butter-1-blue.jpg"]
+      }
+    ],
+    "price": 2400,
+    "price_sale": 2300,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Nintendo"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "id": 25,
+    "name": "Ramen Cat Fabric Made in Japan",
+    "variants": [
+      {
+        "color": "Gray",
+        "colorBg": "#e1dfd6",
+        "sku": "rmn00-87654-01",
+        "quantity": 10,
+        "images": ["/images/products/ramen-1-gray.jpg"]
+      }
+    ],
+    "price": 4100,
+    "price_sale": 3100,
+    "description": "**Introducing our exclusive premium Japanese fabric line featuring your beloved characters from Disney, Sanrio, Nintendo, Marvel, and More!**\n\n## What Sets Us Apart:\n- **Authentic Japanese Manufacturing**\n- **Exclusive Japanese Licenses**\n- **Iconic Characters from Top Brands**\n- **High-Quality Materials**\n\nWe proudly offer worldwide shipping with the convenience of tracking services.\n\n## Enjoy Secure Checkout:\n- PayPal\n- VISA\n- MASTERCARD\n\n⚠ **Act quickly!** We have only a limited supply of this extraordinary fabric left. Don't wait – secure yours today!\n\n---\n\n## 🔴 IMPORTANT INFORMATION BEFORE YOU MAKE A PURCHASE 🔴\n\n### **Product Details:**\n- **Size:** 50cm x 54cm / 19.69\" x 21.26\" (inches) - *A Fat Quarter*\n- **Material:** Medium Weight Cotton\n- **Origin:** Made in Japan\n\n### **Available in the Following Sizes:**\n\n- **1 qty** = 1/4 Yard or Fat Quarter - *19.69\" x 21.26\"*\n- **2 qty** = Half Yard - *19.69\" x 42.52\"*\n- **3 qty** = Half Yard + 1/4 Yard\n- **4 qty** = Full Yard - *39.37\" x 42.52\"*\n\n---\n\n## 🚚 Shipping Information:\n- We **ship globally** from Japan.\n- Your package will be sent via **Japan Post's airmail service**, with the option to upgrade to **registered shipping**, which includes **tracking** for added peace of mind during its journey.\n- **Please choose the 'Registered—Tracking Number Available' option** at the checkout page.\n\n💡 **Pro Tip:** Buy **2 or more** for your friends and family and **save on shipping costs**. It's the perfect gift to share some happiness! 🎁",
+    "details": {
+      "size": {
+        "width": "54 cm",
+        "length": "50 cm"
+      },
+      "material": "Oxford Cotton",
+      "category": "Universal Pictures"
+    },
+    "created_at": "2025-03-26T00:00:00Z"
   }
 ]
