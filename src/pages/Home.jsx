@@ -1,9 +1,13 @@
+import FnnHero from '@/fnn-components/FnnHero';
 import FnnListProducts from '@/fnn-components/FnnListProducts';
 import FnnNewsletter from '../fnn-components/FnnNewsletter';
 
 function Home() {
   return (
     <>
+      <FnnHero />
+
+      {/* Themes Section */}
       <section className="py-14">
         <div className="flex flex-row items-center justify-between pb-8">
           <h2 className="text-2xl">Select Your Themes</h2>
