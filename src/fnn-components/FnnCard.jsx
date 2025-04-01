@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import slugify from '@/utils/slugify';
 import { useState, useMemo } from 'react';
 import { getSelectedVariant } from '@/utils/getSelectedVariant';
 import ProductImage from '@/fnn-components/ProductImage';
@@ -18,7 +20,10 @@ const FnnCard = ({ product }) => {
   }, [selectedColor, product.variants]);
 
   return (
-    <div className="flex w-full cursor-pointer flex-col gap-3">
+    <Link
+      to={`/product/${slugify(product.name)}`}
+      className="flex w-full cursor-pointer flex-col gap-3"
+    >
       {/* Gambar & Informasi Produk */}
       <div className="flex flex-col gap-2">
         <ProductImage src={selectedVariant?.images?.[0]} alt={product.name} />
@@ -48,7 +53,7 @@ const FnnCard = ({ product }) => {
         {/* Status ketersediaan stok */}
         <ProductStockStatus quantity={selectedVariant?.quantity} />
       </div>
-    </div>
+    </Link>
   );
 };
 
