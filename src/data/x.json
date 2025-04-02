@@ -66,13 +66,24 @@
   {
     "id": 3,
     "name": "Sanrio My Melody Purple Cafe Fabric Made in Japan",
+    "images": [
+      "/images/products/help-placeholder.jpg",
+      "/images/products/help-placeholder.jpg",
+      "/images/products/help-placeholder.jpg",
+      "/images/products/help-placeholder.jpg",
+      "/images/products/help-placeholder.jpg",
+      "/images/products/help-placeholder.jpg"
+    ],
     "variants": [
       {
         "color": "Yellow",
         "colorBg": "#FFFF00",
         "sku": "gh3dfbsjkl-87654-01",
         "quantity": 20,
-        "images": ["/images/products/melody-1-yellow.jpg"]
+        "images": [
+          "/images/products/melody-1-yellow.jpg",
+          "/images/products/help-placeholder.jpg"
+        ]
       },
       {
         "color": "Purple",
