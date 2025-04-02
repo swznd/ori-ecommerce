@@ -4,6 +4,7 @@ import ProductTitle from '@/fnn-components/ProductTitle';
 import ProductPrice from '@/fnn-components/ProductPrice';
 import ProductStockStatus from '@/fnn-components/ProductStockStatus';
 import FnnProductColorOptions from '@/fnn-components/FnnProductColorOptions';
+import ReactMarkdown from 'react-markdown';
 
 function ProductPageContent({ product }) {
   const [selectedColor, setSelectedColor] = useState(
@@ -117,18 +118,12 @@ function ProductPageContent({ product }) {
           <button className="btn btn-xl btn-block btn-accent text-white">
             Add to Cart
           </button>
-          <p className="text-gray-700">{product.description}</p>
+
+          {/* Deskripsi Produk dengan ReactMarkdown */}
+          <h2 className="mb-4 text-xl font-semibold">Product Details</h2>
+          <ReactMarkdown>{product.description}</ReactMarkdown>
         </div>
       </div>
-
-      {/* Deskripsi lengkap */}
-      <section className="mt-16 border-t pt-10">
-        <h2 className="mb-4 text-xl font-semibold">Product Details</h2>
-        <p className="leading-relaxed text-gray-700">
-          {product.details?.long_description ||
-            'No additional information available.'}
-        </p>
-      </section>
     </section>
   );
 }
