@@ -29,19 +29,19 @@
   --color-neutral: oklch(21% 0.034 264.665);
   --color-neutral-content: oklch(98% 0.002 247.839);
   --color-info: oklch(78% 0.154 211.53);
-  --color-info-content: oklch(30% 0.056 229.695);
+  --color-info-content: oklch(98% 0.002 247.839);
   --color-success: oklch(79% 0.209 151.711);
-  --color-success-content: oklch(26% 0.065 152.934);
+  --color-success-content: oklch(98% 0.002 247.839);
   --color-warning: oklch(75% 0.183 55.934);
-  --color-warning-content: oklch(26% 0.079 36.259);
-  --color-error: oklch(71% 0.202 349.761);
-  --color-error-content: oklch(28% 0.109 3.907);
+  --color-warning-content: oklch(98% 0.002 247.839);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(98% 0.002 247.839);
   --radius-selector: 0.25rem;
   --radius-field: 0.5rem;
   --radius-box: 2rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 1;
+  --size-selector: 0.3125rem;
+  --size-field: 0.3125rem;
+  --border: 2px;
+  --depth: 0;
   --noise: 1;
 }

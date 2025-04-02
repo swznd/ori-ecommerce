@@ -12,7 +12,7 @@ const FnnProductColorOptions = ({
   onSelectColor,
 }) => {
   if (!variants.length) {
-    return <p className="text-red-500">No variants available</p>;
+    return <p className="text-error">No variants available</p>;
   }
 
   return (

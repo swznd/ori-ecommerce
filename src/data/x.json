@@ -79,7 +79,7 @@
         "color": "Yellow",
         "colorBg": "#FFFF00",
         "sku": "gh3dfbsjkl-87654-01",
-        "quantity": 20,
+        "quantity": 1,
         "images": [
           "/images/products/melody-1-yellow.jpg",
           "/images/products/help-placeholder.jpg"
@@ -89,7 +89,7 @@
         "color": "Purple",
         "colorBg": "#A020F0",
         "sku": "gh3dfbsjkl-87654-02",
-        "quantity": 11,
+        "quantity": 1,
         "images": ["/images/products/melody-1-purple.jpg"]
       },
       {

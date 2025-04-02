@@ -87,22 +87,37 @@ function ProductPageContent({ product }) {
           <ProductTitle
             name={product.name}
             category={product.details?.category}
+            categoryClassName="text-md"
+            nameClassName="text-2xl"
           />
-          <ProductPrice price={product.price} salePrice={product.price_sale} />
-          <ProductStockStatus quantity={selectedVariant?.quantity} />
+          <ProductPrice
+            price={product.price}
+            salePrice={product.price_sale}
+            className=""
+            classNamePrice="text-2xl text-neutral font-medium"
+            classNameOriginal="text-lg text-error font-medium line-through"
+          />
+
+          <ProductStockStatus
+            quantity={selectedVariant?.quantity}
+            showAlways
+            className="text-base font-medium"
+          />
 
           <div className="space-y-2">
-            <p className="text-sm text-slate-500">Color: {selectedColor}</p>
+            <p className="text-neutral text-sm font-medium">
+              Color: {selectedColor}
+            </p>
             <FnnProductColorOptions
               variants={product.variants}
               selectedColor={selectedColor}
               onSelectColor={setSelectedColor}
             />
           </div>
-
+          <button className="btn btn-xl btn-block btn-accent text-white">
+            Add to Cart
+          </button>
           <p className="text-gray-700">{product.description}</p>
-
-          <button className="btn btn-primary">Add to Cart</button>
         </div>
       </div>
 
