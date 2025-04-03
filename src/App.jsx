@@ -7,12 +7,14 @@ import FnnListProducts from '@/fnn-components/FnnListProducts';
 import products from '@/data/x.json'; // Ambil data dari src/data/x.json
 import ProductPage from '@/pages/ProductPage';
 import ScrollToTop from '@/fnn-components/ScrollToTop';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const dummyProduct = products[0]; // Ambil produk pertama dari JSON
 
   return (
     <>
+      <Toaster />
       <BrowserRouter>
         <ScrollToTop />
         <div className="flex min-h-screen flex-col">

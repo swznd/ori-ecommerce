@@ -28,7 +28,7 @@ const ProductStockStatus = ({
   if (showAlways) {
     return (
       <p className={`text-neutral text-sm ${className}`}>
-        In Stock: {quantity} items
+        {quantity > 10 ? 'In Stock' : `In Stock: ${quantity} items`}
       </p>
     );
   }

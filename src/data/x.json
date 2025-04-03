@@ -89,14 +89,14 @@
         "color": "Purple",
         "colorBg": "#A020F0",
         "sku": "gh3dfbsjkl-87654-02",
-        "quantity": 1,
+        "quantity": 0,
         "images": ["/images/products/melody-1-purple.jpg"]
       },
       {
         "color": "Dark",
         "colorBg": "#343b35",
         "sku": "gh3dfbsjkl-87654-03",
-        "quantity": 11,
+        "quantity": 70,
         "images": ["/images/products/melody-1-dark.jpg"]
       }
     ],
