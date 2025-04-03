@@ -9,6 +9,7 @@ import ProductTitle from '@/fnn-components/ProductTitle';
 import ProductPrice from '@/fnn-components/ProductPrice';
 import ProductStockStatus from '@/fnn-components/ProductStockStatus';
 import FnnProductColorOptions from '@/fnn-components/FnnProductColorOptions';
+import { useCart } from '@/contexts/CartContext';
 
 function ProductPageContent({ product }) {
   // 🌈 Warna varian yang dipilih
@@ -30,10 +31,7 @@ function ProductPageContent({ product }) {
     return Math.min(available, 10);
   }, [selectedVariant]);
 
-  // 🛒 Fungsi dummy addToCart (bisa diganti pakai Context atau global store)
-  const addToCart = (item) => {
-    console.log('Adding to cart:', item);
-  };
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart({
