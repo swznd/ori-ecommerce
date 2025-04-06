@@ -9,7 +9,7 @@ import ProductTitle from '@/fnn-components/ProductTitle';
 import ProductPrice from '@/fnn-components/ProductPrice';
 import ProductStockStatus from '@/fnn-components/ProductStockStatus';
 import FnnProductColorOptions from '@/fnn-components/FnnProductColorOptions';
-import { useCart } from '@/contexts/CartContext';
+import { useCart } from '@/contexts/useCart';
 
 function ProductPageContent({ product }) {
   // 🌈 Warna varian yang dipilih
@@ -19,6 +19,10 @@ function ProductPageContent({ product }) {
 
   // 📦 Jumlah quantity yang ingin dibeli
   const [selectedQty, setSelectedQty] = useState(1);
+
+  useEffect(() => {
+    setSelectedQty(1);
+  }, [selectedColor]);
 
   // 🔍 Dapatkan varian yang sesuai warna terpilih
   const selectedVariant = useMemo(() => {

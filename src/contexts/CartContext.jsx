@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, useRef } from 'react';
+import { createContext, useEffect, useState, useRef } from 'react';
 
 const CartContext = createContext();
 
@@ -6,8 +6,12 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [isInitialized, setIsInitialized] = useState(false);
   const isUpdating = useRef(false);
+  const cartRef = useRef(cartItems);
 
-  // 🚀 Load data dari localStorage saat pertama kali
+  useEffect(() => {
+    cartRef.current = cartItems;
+  }, [cartItems]);
+
   useEffect(() => {
     const stored = localStorage.getItem('cart');
     if (stored) {
@@ -23,30 +27,33 @@ export const CartProvider = ({ children }) => {
     setIsInitialized(true);
   }, []);
 
-  // 💾 Simpan cart ke localStorage setelah initialized
   useEffect(() => {
     if (isInitialized && !isUpdating.current) {
       localStorage.setItem('cart', JSON.stringify(cartItems));
     }
   }, [cartItems, isInitialized]);
 
-  // 🛒 Tambahkan item ke cart (gabung jika sama)
   const addToCart = (item) => {
-    setCartItems((prev) => {
-      const existingIndex = prev.findIndex(
+    setCartItems((prevCart) => {
+      // Cari apakah item sudah ada di cart
+      const existingIndex = prevCart.findIndex(
         (p) =>
           p.productId === item.productId &&
           p.variant.color === item.variant.color,
       );
 
-      const updatedCart = [...prev];
+      // Salin cart lama
+      const updatedCart = [...prevCart];
 
       if (existingIndex !== -1) {
+        // Jika item sudah ada, update quantity dengan yang baru
+        const existingItem = updatedCart[existingIndex];
         updatedCart[existingIndex] = {
-          ...updatedCart[existingIndex],
-          quantity: updatedCart[existingIndex].quantity + item.quantity,
+          ...existingItem,
+          quantity: existingItem.quantity + item.quantity,
         };
       } else {
+        // Jika item belum ada, tambahkan baru
         updatedCart.push(item);
       }
 
@@ -61,5 +68,4 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// 🔁 Hook agar mudah digunakan di komponen
-export const useCart = () => useContext(CartContext);
+export default CartContext;
