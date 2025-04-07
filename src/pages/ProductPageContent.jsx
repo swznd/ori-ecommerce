@@ -152,7 +152,7 @@ function ProductPageContent({ product }) {
           {/* 🔢 Pilihan Quantity */}
           <label
             htmlFor="qty-select"
-            className="select text-md w-1/3 font-medium"
+            className="select text-md w-full font-medium lg:w-1/3"
           >
             <span className="label text-neutral">Quantity</span>
             <select
