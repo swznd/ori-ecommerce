@@ -15,7 +15,12 @@ function FnnHeader() {
               <a href="">Contact</a>
             </li>
           </ul>
-          <button className="btn btn-primary text-base-100">Reservasi</button>
+          <button
+            className="btn"
+            onClick={() => document.getElementById('my_modal_2').showModal()}
+          >
+            open modal
+          </button>
         </div>
       </div>
     </>

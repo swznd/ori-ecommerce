@@ -8,6 +8,7 @@ import products from '@/data/x.json'; // Ambil data dari src/data/x.json
 import ProductPage from '@/pages/ProductPage';
 import ScrollToTop from '@/fnn-components/ScrollToTop';
 import { Toaster } from 'react-hot-toast';
+import MiniCart from './pages/MiniCart';
 
 function App() {
   const dummyProduct = products[0]; // Ambil produk pertama dari JSON
@@ -19,6 +20,7 @@ function App() {
         <ScrollToTop />
         <div className="flex min-h-screen flex-col">
           <FnnHeader />
+          <MiniCart />
           <main className="container mx-auto grow px-4">
             <Routes>
               <Route path="/" element={<Home />} />
