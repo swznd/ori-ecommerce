@@ -19,13 +19,25 @@ function MiniCart() {
 
   return (
     <dialog id="mini_cart_modal" className="modal">
-      <div className="modal-box flex max-h-[80vh] w-full flex-col bg-white p-0">
+      <div className="modal-box flex max-h-[80vh] min-h-[50vh] w-full flex-col bg-white p-0">
         <div className="p-6">
           <h3 className="text-xl font-bold">Your Cart</h3>
         </div>
 
         <div className="flex-1 space-y-6 overflow-y-auto px-6 pb-6">
           <ul className="list space-y-6 [&_.list-row:after]:!border-b-0">
+            {cartItems.length === 0 && (
+              <div className="flex flex-col items-center justify-center py-10">
+                <img
+                  src="/images/products/design-woman-sewing.png" // atau placeholder gambar lo
+                  alt="Empty Cart"
+                  className="h-40"
+                />
+                <p className="mt-4 text-sm text-gray-500">
+                  Your cart is empty.
+                </p>
+              </div>
+            )}
             <AnimatePresence>
               {cartItems.map((item) => {
                 const itemPrice = item.price_sale ?? item.price;
@@ -44,9 +56,9 @@ function MiniCart() {
                       className="size-20 rounded"
                     />
 
-                    <div className="flex flex-col justify-between">
+                    <div className="flex flex-1 flex-col justify-between overflow-hidden">
                       <div>
-                        <h3 className="text-base font-medium">{item.name}</h3>
+                        <h3 className="w-full truncate text-sm">{item.name}</h3>
                         <p className="text-sm">Color: {item.variant.color}</p>
                       </div>
 
@@ -62,7 +74,7 @@ function MiniCart() {
                     </div>
 
                     <div className="flex h-full flex-col items-end justify-between">
-                      <span className="text-base font-medium">
+                      <span className="text-sm font-medium">
                         ¥{itemPrice.toLocaleString()}
                       </span>
 
@@ -86,7 +98,8 @@ function MiniCart() {
                           type="text"
                           readOnly
                           value={item.quantity}
-                          className="input input-md h-7 w-8 border-0 bg-transparent p-0 text-center"
+                          aria-label={`Quantity for ${item.name}`}
+                          className="input input-md h-7 w-8 border-0 bg-transparent p-0 text-center focus:ring-0 focus:outline-none disabled:opacity-50"
                         />
 
                         <button
@@ -124,7 +137,12 @@ function MiniCart() {
             </li>
           </ul>
 
-          <button className="btn btn-primary w-full text-lg">Go to cart</button>
+          <button
+            disabled={cartItems.length === 0}
+            className="btn btn-accent w-full text-lg"
+          >
+            Go to cart
+          </button>
         </div>
       </div>
 
