@@ -5,6 +5,7 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [isInitialized, setIsInitialized] = useState(false);
+
   const isUpdating = useRef(false);
   const cartRef = useRef(cartItems);
 
@@ -20,8 +21,8 @@ export const CartProvider = ({ children }) => {
         if (Array.isArray(parsed)) {
           setCartItems(parsed);
         }
-      } catch (e) {
-        console.error('Failed to parse cart from localStorage:', e);
+      } catch {
+        // ignore error
       }
     }
     setIsInitialized(true);
@@ -35,34 +36,49 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (item) => {
     setCartItems((prevCart) => {
-      // Cari apakah item sudah ada di cart
       const existingIndex = prevCart.findIndex(
         (p) =>
           p.productId === item.productId &&
           p.variant.color === item.variant.color,
       );
 
-      // Salin cart lama
       const updatedCart = [...prevCart];
 
       if (existingIndex !== -1) {
-        // Jika item sudah ada, update quantity dengan yang baru
         const existingItem = updatedCart[existingIndex];
         updatedCart[existingIndex] = {
           ...existingItem,
           quantity: existingItem.quantity + item.quantity,
         };
       } else {
-        // Jika item belum ada, tambahkan baru
-        updatedCart.push(item);
+        updatedCart.push({
+          productId: item.productId,
+          name: item.name,
+          image: item.image,
+          price: item.price,
+          variant: item.variant,
+          quantity: item.quantity,
+        });
       }
 
       return updatedCart;
     });
   };
 
+  const updateQuantity = (productId, variant, newQuantity) => {
+    if (newQuantity < 1) return;
+
+    setCartItems((prevCart) =>
+      prevCart.map((item) =>
+        item.productId === productId && item.variant.color === variant.color
+          ? { ...item, quantity: newQuantity }
+          : item,
+      ),
+    );
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity }}>
       {children}
     </CartContext.Provider>
   );

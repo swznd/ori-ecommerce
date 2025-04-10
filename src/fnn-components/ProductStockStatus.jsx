@@ -1,13 +1,3 @@
-/**
- * Komponen untuk menampilkan status stok produk.
- * - Tampilkan "Sold Out" jika quantity 0
- * - Tampilkan "Only X Left in Stock!" jika quantity < 5
- * - Tampilkan "In Stock: X items" jika showAlways true
- *
- * @param {number} quantity - Jumlah stok tersisa.
- * @param {boolean} showAlways - Jika true, tetap tampilkan info stok meski jumlah besar.
- * @param {string} className - Class tambahan yang bisa override default.
- */
 const ProductStockStatus = ({
   quantity,
   showAlways = false,

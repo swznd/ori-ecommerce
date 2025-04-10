@@ -1,13 +1,3 @@
-/**
- * Komponen untuk menampilkan harga produk.
- * Menampilkan harga diskon jika tersedia, beserta harga asli yang dicoret.
- *
- * @param {number} price - Harga asli produk.
- * @param {number|null} salePrice - Harga diskon produk (jika ada).
- * @param {string} className - Class wrapper utama.
- * @param {string} classNamePrice - Class harga diskon atau harga asli.
- * @param {string} classNameOriginal - Class harga asli yang dicoret.
- */
 const ProductPrice = ({
   price,
   salePrice,

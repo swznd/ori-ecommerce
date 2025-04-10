@@ -1,11 +1,3 @@
-/**
- * Komponen interaktif untuk memilih warna varian produk.
- * Menampilkan daftar bulatan warna, dan memberikan feedback visual saat dipilih.
- *
- * @param {Array} variants - Daftar varian produk (masing-masing memiliki color dan colorBg).
- * @param {string} selectedColor - Warna yang sedang dipilih user.
- * @param {Function} onSelectColor - Fungsi untuk mengubah warna yang dipilih.
- */
 const FnnProductColorOptions = ({
   variants = [],
   selectedColor,
@@ -17,7 +9,6 @@ const FnnProductColorOptions = ({
 
   return (
     <>
-      {/* Label aksesibilitas */}
       <h4 className="sr-only">Available colors</h4>
 
       <ul role="list" className="flex flex-wrap space-x-2">

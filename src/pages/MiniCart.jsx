@@ -1,10 +1,12 @@
 import { HeartIcon, TrashIcon } from '@heroicons/react/16/solid';
+import { useCart } from '@/contexts/useCart';
 
 function MiniCart() {
+  const { cartItems, updateQuantity } = useCart();
+
   return (
-    <dialog id="my_modal_2" className="modal">
+    <dialog id="mini_cart_modal" className="modal">
       <div className="modal-box flex max-h-[80vh] w-full flex-col bg-white p-0">
-        {/* Header */}
         <div className="p-6">
           <ul className="list">
             <li>
@@ -13,52 +15,87 @@ function MiniCart() {
           </ul>
         </div>
 
-        {/* Scrollable Cart List */}
         <div className="flex-1 space-y-6 overflow-y-auto px-6 pb-6">
           <ul className="list space-y-6 [&_.list-row:after]:!border-b-0">
-            {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
+            {cartItems.map((item, index) => (
               <li key={index} className="list-row p-0">
                 <img
-                  src="/images/products/butter-1-yellow.jpg"
-                  alt=""
+                  src={item.image}
+                  alt={item.name}
                   className="size-20 rounded"
                 />
+
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-base font-medium">
-                      Butter X Fabric Made in Japan
-                    </h3>
-                    <p className="text-sm">Color: Yellow</p>
+                    <h3 className="text-base font-medium">{item.name}</h3>
+                    <p className="text-sm">Color: {item.variant.color}</p>
                   </div>
+
                   <div className="flex flex-row gap-2">
                     <HeartIcon className="h-5 w-5 cursor-pointer text-gray-500 hover:text-red-500" />
                     <TrashIcon className="h-5 w-5 cursor-pointer text-gray-500 hover:text-neutral-700" />
                   </div>
                 </div>
-                <div>
-                  <span className="text-base font-medium">¥2,300</span>
-                  <div>Jumlah</div>
+
+                <div className="flex h-full flex-col items-end justify-between">
+                  <span className="text-base font-medium">
+                    ¥{(item.price || 0).toLocaleString()}
+                  </span>
+
+                  <div className="m-0 flex items-center rounded border-0 bg-neutral-100">
+                    <button
+                      onClick={() =>
+                        updateQuantity(
+                          item.productId,
+                          item.variant,
+                          item.quantity - 1,
+                        )
+                      }
+                      className="text-md h-7 w-7 cursor-pointer font-medium"
+                    >
+                      -
+                    </button>
+
+                    <input
+                      type="text"
+                      readOnly
+                      value={item.quantity}
+                      className="input input-md h-7 w-8 border-0 bg-transparent p-0 text-center"
+                    />
+
+                    <button
+                      onClick={() =>
+                        updateQuantity(
+                          item.productId,
+                          item.variant,
+                          item.quantity + 1,
+                        )
+                      }
+                      className="text-md h-7 w-7 cursor-pointer font-medium"
+                    >
+                      +
+                    </button>
+                  </div>
                 </div>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Footer */}
         <div className="bg-white p-6">
           <ul className="list">
             <li className="list-row mb-6 p-0">
               <span className="list-col-grow text-lg font-medium">
                 Subtotal
               </span>
-              <span className="text-lg font-medium">¥6,900</span>
+              <span className="text-lg font-medium">Manual Dulu</span>
             </li>
           </ul>
+
           <button className="btn btn-primary w-full text-lg">Go to cart</button>
         </div>
       </div>
 
-      {/* Backdrop */}
       <form method="dialog" className="modal-backdrop">
         <button>close</button>
       </form>

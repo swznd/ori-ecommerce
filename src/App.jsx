@@ -1,17 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+
 import FnnHeader from '@/fnn-components/FnnHeader';
 import FnnFooter from '@/fnn-components/FnnFooter';
-import Home from '@/pages/Home';
+import ScrollToTop from '@/fnn-components/ScrollToTop';
 import FnnCard from '@/fnn-components/FnnCard';
 import FnnListProducts from '@/fnn-components/FnnListProducts';
-import products from '@/data/x.json'; // Ambil data dari src/data/x.json
+
+import Home from '@/pages/Home';
 import ProductPage from '@/pages/ProductPage';
-import ScrollToTop from '@/fnn-components/ScrollToTop';
-import { Toaster } from 'react-hot-toast';
-import MiniCart from './pages/MiniCart';
+import MiniCart from '@/pages/MiniCart';
+
+import products from '@/data/x.json';
 
 function App() {
-  const dummyProduct = products[0]; // Ambil produk pertama dari JSON
+  const dummyProduct = products[0];
 
   return (
     <>

@@ -22,7 +22,6 @@ const FnnListProducts = ({ filter = {}, className }) => {
     ? filteredProducts.slice(0, limit)
     : filteredProducts;
 
-  // ✅ Default grid style
   const defaultGridClass =
     'grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5';
 
