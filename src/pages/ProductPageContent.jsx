@@ -32,11 +32,13 @@ function ProductPageContent({ product }) {
   }, [selectedVariant]);
 
   const handleAddToCart = () => {
+    const itemPrice = product.price_sale ?? product.price;
+
     addToCart({
       productId: product.id,
       name: product.name,
       image: selectedVariant.images[0],
-      price: product.price,
+      price: itemPrice, // <- fix disini
       variant: selectedVariant,
       quantity: selectedQty,
     });

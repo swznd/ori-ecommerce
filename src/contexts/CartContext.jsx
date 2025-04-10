@@ -77,8 +77,21 @@ export const CartProvider = ({ children }) => {
     );
   };
 
+  const removeFromCart = (productId, variant) => {
+    setCartItems((prevCart) =>
+      prevCart.filter(
+        (item) =>
+          !(
+            item.productId === productId && item.variant.color === variant.color
+          ),
+      ),
+    );
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity }}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, updateQuantity, removeFromCart }}
+    >
       {children}
     </CartContext.Provider>
   );
