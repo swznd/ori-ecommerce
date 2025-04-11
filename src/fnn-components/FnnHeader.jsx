@@ -6,7 +6,7 @@ function FnnHeader() {
 
         <ul className="flex flex-row gap-5">
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="">About</a>
