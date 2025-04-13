@@ -135,6 +135,7 @@ function ProductPageContent({ product }) {
               variants={product.variants}
               selectedColor={selectedColor}
               onSelectColor={setSelectedColor}
+              className="size-7"
             />
 
             <ProductStockStatus
