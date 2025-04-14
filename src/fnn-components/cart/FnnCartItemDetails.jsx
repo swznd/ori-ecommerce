@@ -8,8 +8,9 @@ const FnnCartItemDetails = ({
   onIncrease,
   onDecrease,
   onRemove,
-  classNameTitle = '', // untuk item.name (h3)
-  classNameColor = '', // untuk item.variant.color (p)
+  classNameTitle = 'text-sm', // untuk item.name (h3)
+  classNameColor = 'text-sm', // untuk item.variant.color (p)
+  classNamePrice = 'text-sm font-medium', // untuk itemPrice
 }) => {
   const itemPrice = item.price_sale ?? item.price;
 
@@ -18,12 +19,10 @@ const FnnCartItemDetails = ({
       <div className="flex flex-col justify-between overflow-hidden">
         {/* Product Name & Color */}
         <div>
-          <h3 className={`mb-1 w-full truncate text-sm ${classNameTitle}`}>
+          <h3 className={`mb-1 w-full truncate ${classNameTitle}`}>
             {item.name}
           </h3>{' '}
-          <p className={`text-sm ${classNameColor}`}>
-            Color: {item.variant.color}
-          </p>{' '}
+          <p className={`${classNameColor}`}>Color: {item.variant.color}</p>{' '}
         </div>
         <div className="flex flex-row gap-2">
           <HeartIcon className="h-5 w-5 cursor-pointer text-gray-500 hover:text-red-500" />
@@ -36,7 +35,7 @@ const FnnCartItemDetails = ({
 
       {/* Price, Qty & Action */}
       <div className="flex h-full flex-col items-end justify-between">
-        <ProductPrice classNamePrice="text-sm font-medium" price={itemPrice} />
+        <ProductPrice classNamePrice={classNamePrice} price={itemPrice} />
 
         <FnnQuantitySelector
           value={item.quantity}
