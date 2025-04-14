@@ -8,7 +8,7 @@ const FnnQuantitySelector = ({
 }) => {
   return (
     <div
-      className={`flex items-center rounded border-0 bg-neutral-100 select-none ${className}`}
+      className={`flex items-center rounded border-1 border-neutral-300 bg-neutral-100 select-none ${className}`}
     >
       {/* Tombol (-) */}
       <button
