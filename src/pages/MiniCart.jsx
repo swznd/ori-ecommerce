@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { useCart } from '@/contexts/useCart';
 import ProductImage from '@/fnn-components/ProductImage';
-import FnnCartItemContent from '@/fnn-components/cart/FnnCartItemContent';
+import FnnCartItemDetails from '@/fnn-components/cart/FnnCartItemDetails';
 import FnnCartEmptyState from '@/fnn-components/cart/FnnCartEmptyState';
 import FnnCartSubtotal from '@/fnn-components/cart/FnnCartSubtotal';
 
@@ -61,7 +61,7 @@ function MiniCart() {
                     />
 
                     {/* Kanan */}
-                    <FnnCartItemContent
+                    <FnnCartItemDetails
                       item={item}
                       onIncrease={() =>
                         updateQuantity(

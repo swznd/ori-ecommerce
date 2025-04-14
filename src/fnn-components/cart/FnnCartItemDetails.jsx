@@ -3,7 +3,7 @@ import FnnQuantitySelector from '@/fnn-components/FnnQuantitySelector';
 
 import { TrashIcon, HeartIcon } from '@heroicons/react/16/solid';
 
-const FnnCartItemContent = ({ item, onIncrease, onDecrease, onRemove }) => {
+const FnnCartItemDetails = ({ item, onIncrease, onDecrease, onRemove }) => {
   const itemPrice = item.price_sale ?? item.price;
 
   return (
@@ -39,4 +39,4 @@ const FnnCartItemContent = ({ item, onIncrease, onDecrease, onRemove }) => {
   );
 };
 
-export default FnnCartItemContent;
+export default FnnCartItemDetails;
