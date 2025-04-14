@@ -36,7 +36,6 @@ function ProductPageContent({ product }) {
 
     addToCart({
       productId: product.id,
-      slug: product.slug,
       name: product.name,
       image: selectedVariant.images[0],
       price: itemPrice, // <- fix disini
