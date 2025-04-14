@@ -10,6 +10,7 @@ import FnnListProducts from '@/fnn-components/FnnListProducts';
 import Home from '@/pages/Home';
 import ProductPage from '@/pages/ProductPage';
 import MiniCart from '@/pages/MiniCart';
+import CartPage from '@/pages/CartPage';
 
 import products from '@/data/x.json';
 
@@ -28,6 +29,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/product/:slug" element={<ProductPage />} />
+              <Route path="/cart" element={<CartPage />} />
               <Route
                 path="/test"
                 element={<FnnCard product={dummyProduct} />}
