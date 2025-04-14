@@ -3,7 +3,14 @@ import FnnQuantitySelector from '@/fnn-components/FnnQuantitySelector';
 
 import { TrashIcon, HeartIcon } from '@heroicons/react/16/solid';
 
-const FnnCartItemDetails = ({ item, onIncrease, onDecrease, onRemove }) => {
+const FnnCartItemDetails = ({
+  item,
+  onIncrease,
+  onDecrease,
+  onRemove,
+  classNameTitle = '', // untuk item.name (h3)
+  classNameColor = '', // untuk item.variant.color (p)
+}) => {
   const itemPrice = item.price_sale ?? item.price;
 
   return (
@@ -11,8 +18,12 @@ const FnnCartItemDetails = ({ item, onIncrease, onDecrease, onRemove }) => {
       <div className="flex flex-col justify-between overflow-hidden">
         {/* Product Name & Color */}
         <div>
-          <h3 className="mb-1 w-full truncate text-sm">{item.name}</h3>
-          <p className="text-sm">Color: {item.variant.color}</p>
+          <h3 className={`mb-1 w-full truncate text-sm ${classNameTitle}`}>
+            {item.name}
+          </h3>{' '}
+          <p className={`text-sm ${classNameColor}`}>
+            Color: {item.variant.color}
+          </p>{' '}
         </div>
         <div className="flex flex-row gap-2">
           <HeartIcon className="h-5 w-5 cursor-pointer text-gray-500 hover:text-red-500" />
