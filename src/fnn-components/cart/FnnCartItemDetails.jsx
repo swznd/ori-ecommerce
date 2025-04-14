@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import ProductPrice from '@/fnn-components/ProductPrice';
 import FnnQuantitySelector from '@/fnn-components/FnnQuantitySelector';
+import slugify from '@/utils/slugify';
 
 import { TrashIcon, HeartIcon } from '@heroicons/react/16/solid';
 
@@ -20,8 +23,13 @@ const FnnCartItemDetails = ({
         {/* Product Name & Color */}
         <div>
           <h3 className={`mb-1 w-full truncate ${classNameTitle}`}>
-            {item.name}
-          </h3>{' '}
+            <Link
+              to={`/product/${slugify(item.name)}`}
+              className="hover:underline"
+            >
+              {item.name}
+            </Link>
+          </h3>
           <p className={`${classNameColor}`}>Color: {item.variant.color}</p>{' '}
         </div>
         <div className="flex flex-row gap-2">
