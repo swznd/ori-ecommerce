@@ -78,6 +78,7 @@ function ProductPageContent({ product }) {
       price: itemPrice,
       variant: selectedVariant,
       quantity: selectedQty,
+      details: product.details,
     });
 
     toast.success('Added to cart!');

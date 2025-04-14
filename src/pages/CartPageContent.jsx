@@ -10,6 +10,11 @@ import slugify from '@/utils/slugify';
 const CartPageContent = () => {
   const { cartItems, updateQuantity, removeFromCart } = useCart();
 
+  const totalWeight = cartItems.reduce((acc, item) => {
+    const weight = item.details?.weight ?? 0;
+    return acc + weight * item.quantity;
+  }, 0);
+
   if (!cartItems.length) {
     return (
       <section className="container mx-auto px-4 py-10">
@@ -63,6 +68,14 @@ const CartPageContent = () => {
 
         <div>
           <FnnCartSubtotal cartItems={cartItems} />
+
+          <p className="text-neutral mb-2 text-sm font-medium">
+            Estimated Total Weight:{' '}
+            <span className="font-semibold text-black">
+              {totalWeight} grams
+            </span>
+          </p>
+
           <button className="btn btn-accent w-full text-lg">Checkout</button>
         </div>
       </div>

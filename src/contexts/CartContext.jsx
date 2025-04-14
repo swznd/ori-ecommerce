@@ -58,6 +58,7 @@ export const CartProvider = ({ children }) => {
           price: item.price,
           variant: item.variant,
           quantity: item.quantity,
+          details: item.details,
         });
       }
 
