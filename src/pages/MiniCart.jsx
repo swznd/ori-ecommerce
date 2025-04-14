@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 import { useCart } from '@/contexts/useCart';
 import ProductImage from '@/fnn-components/ProductImage';
 import FnnCartItemDetails from '@/fnn-components/cart/FnnCartItemDetails';
 import FnnCartEmptyState from '@/fnn-components/cart/FnnCartEmptyState';
 import FnnCartSubtotal from '@/fnn-components/cart/FnnCartSubtotal';
+import slugify from '@/utils/slugify';
 
 function MiniCart() {
   const { cartItems, updateQuantity, removeFromCart } = useCart();
@@ -14,9 +16,11 @@ function MiniCart() {
   const [isEmpty, setIsEmpty] = useState(false);
   const [isDelayFinished, setIsDelayFinished] = useState(false);
 
-  // Handle delay empty state
+  const navigate = useNavigate();
+
   useEffect(() => {
     let timeout;
+
     if (cartItems.length === 0) {
       timeout = setTimeout(() => {
         setIsEmpty(true);
@@ -33,12 +37,10 @@ function MiniCart() {
   return (
     <dialog id="mini_cart_modal" className="modal">
       <div className="modal-box flex max-h-[80vh] min-h-[50vh] w-full flex-col overflow-hidden bg-white p-0">
-        {/* Header */}
         <div className="p-6">
           <h3 className="text-xl font-bold">Your Cart</h3>
         </div>
 
-        {/* Content */}
         <div className="flex-1 space-y-6 overflow-y-auto px-6 pb-6">
           {isEmpty && isDelayFinished ? (
             <FnnCartEmptyState />
@@ -53,16 +55,15 @@ function MiniCart() {
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.2, ease: 'easeInOut' }}
                   >
-                    {/* Kiri */}
                     <ProductImage
                       src={item.image}
                       alt={item.name}
                       className="size-20"
                     />
 
-                    {/* Kanan */}
                     <FnnCartItemDetails
                       item={item}
+                      href={`/product/${slugify(item.name)}?color=${encodeURIComponent(item.variant.color)}`}
                       onIncrease={() =>
                         updateQuantity(
                           item.productId,
@@ -88,13 +89,16 @@ function MiniCart() {
           )}
         </div>
 
-        {/* Subtotal + Button */}
         <div className="bg-white p-6">
           <FnnCartSubtotal cartItems={cartItems} />
 
           <button
             disabled={cartItems.length === 0}
             className="btn btn-accent w-full text-lg"
+            onClick={() => {
+              document.getElementById('mini_cart_modal')?.close();
+              navigate('/cart');
+            }}
           >
             Go to cart
           </button>

@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import ReactMarkdown from 'react-markdown';
 
@@ -12,39 +13,21 @@ import { useCart } from '@/contexts/useCart';
 function ProductPageContent({ product }) {
   const { addToCart } = useCart();
 
-  const [selectedColor, setSelectedColor] = useState(
-    product.variants?.[0]?.color || 'Default Color',
-  );
+  const [selectedColor, setSelectedColor] = useState('');
   const [selectedQty, setSelectedQty] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  useEffect(() => {
-    setSelectedQty(1);
-  }, [selectedColor]);
+  const [searchParams] = useSearchParams();
+  const colorFromURL = searchParams.get('color');
 
-  const selectedVariant = useMemo(
-    () => product.variants?.find((variant) => variant.color === selectedColor),
-    [selectedColor, product.variants],
-  );
+  const selectedVariant = useMemo(() => {
+    return product.variants?.find((variant) => variant.color === selectedColor);
+  }, [selectedColor, product.variants]);
 
   const maxQty = useMemo(() => {
     const available = selectedVariant?.quantity || 0;
     return Math.min(available, 10);
   }, [selectedVariant]);
-
-  const handleAddToCart = () => {
-    const itemPrice = product.price_sale ?? product.price;
-
-    addToCart({
-      productId: product.id,
-      name: product.name,
-      image: selectedVariant.images[0],
-      price: itemPrice, // <- fix disini
-      variant: selectedVariant,
-      quantity: selectedQty,
-    });
-
-    toast.success('Added to cart!');
-  };
 
   const allImages = useMemo(() => {
     const generalImages = (product.images || []).map((src, index) => ({
@@ -65,12 +48,40 @@ function ProductPageContent({ product }) {
     return [...generalImages, ...variantImages];
   }, [product.images, product.variants]);
 
-  const [selectedImage, setSelectedImage] = useState(allImages[0]);
+  useEffect(() => {
+    setSelectedColor(
+      colorFromURL || product.variants?.[0]?.color || 'Default Color',
+    );
+    setSelectedQty(1);
+  }, [product, colorFromURL]);
+
+  useEffect(() => {
+    setSelectedQty(1);
+  }, [selectedColor]);
+
+  useEffect(() => {
+    setSelectedImage(allImages[0]);
+  }, [allImages]);
 
   useEffect(() => {
     const fallback = allImages.find((img) => img.color === selectedColor);
     if (fallback) setSelectedImage(fallback);
   }, [selectedColor, allImages]);
+
+  const handleAddToCart = () => {
+    const itemPrice = product.price_sale ?? product.price;
+
+    addToCart({
+      productId: product.id,
+      name: product.name,
+      image: selectedVariant.images[0],
+      price: itemPrice,
+      variant: selectedVariant,
+      quantity: selectedQty,
+    });
+
+    toast.success('Added to cart!');
+  };
 
   const handleThumbnailClick = (img) => {
     setSelectedImage(img);
@@ -84,7 +95,7 @@ function ProductPageContent({ product }) {
       <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2">
         <div className="flex flex-col gap-4">
           <ProductImage
-            src={selectedImage.src}
+            src={selectedImage?.src}
             alt={product.name}
             className="hover:opacity-100"
           />
@@ -95,7 +106,7 @@ function ProductPageContent({ product }) {
                 key={img.index}
                 onClick={() => handleThumbnailClick(img)}
                 className={`overflow-hidden rounded border ${
-                  selectedImage.index === img.index
+                  selectedImage?.index === img.index
                     ? 'border-primary border-2'
                     : 'border-transparent hover:border-gray-300'
                 }`}
