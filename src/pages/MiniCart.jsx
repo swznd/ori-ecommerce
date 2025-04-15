@@ -38,7 +38,7 @@ function MiniCart() {
     <dialog id="mini_cart_modal" className="modal">
       <div className="modal-box flex max-h-[80vh] min-h-[50vh] w-full flex-col overflow-hidden bg-white p-0">
         <div className="p-6">
-          <h3 className="text-xl font-bold">Your Cart</h3>
+          <h3 className="text-xl font-medium">Shopping Cart</h3>
         </div>
 
         <div className="flex-1 space-y-6 overflow-y-auto px-6 pb-6">
