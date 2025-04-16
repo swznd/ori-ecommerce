@@ -82,23 +82,32 @@ const CartPageContent = () => {
           {/* Note Section */}
           {!showNote ? (
             <p
-              className="text-primary cursor-pointer text-base hover:underline"
+              className="text-primary w-fit cursor-pointer text-base hover:underline"
               onClick={() => setShowNote(true)}
             >
               Add a note to seller
             </p>
           ) : (
             <div className="space-y-3">
-              <p className="text-neutral text-base font-medium">
-                Leave a note about your order
-              </p>
+              <div className="flex w-full flex-row items-center justify-between gap-5 md:max-w-lg">
+                <p className="text-neutral text-base">
+                  Leave a note about your order
+                </p>
+                <p className="text-neutral mt-1 text-end text-xs">
+                  {note.length} / 140 characters
+                </p>
+              </div>
 
               <textarea
-                className="textarea textarea-secondary w-full md:max-w-lg"
+                className="textarea textarea-secondary w-full text-base md:max-w-lg"
                 placeholder="Write here"
                 rows={4}
                 value={note}
-                onChange={(e) => setNote(e.target.value)}
+                onChange={(e) => {
+                  if (e.target.value.length <= 140) {
+                    setNote(e.target.value);
+                  }
+                }}
               />
             </div>
           )}
@@ -109,11 +118,9 @@ const CartPageContent = () => {
           <FnnCartSubtotal cartItems={cartItems} />
 
           <div>
-            <p className="text-neutral mb-2 text-xs font-medium">
+            <p className="text-neutral mb-2 text-xs">
               Estimated Total Weight:{' '}
-              <span className="font-semibold text-black">
-                {totalWeight} grams
-              </span>
+              <span className="text-black">{totalWeight} grams</span>
             </p>
 
             <button className="btn btn-accent w-full text-lg">Checkout</button>

@@ -1,7 +1,7 @@
 function FnnHeader() {
   return (
-    <div className="bg-base-300">
-      <div className="container mx-auto flex flex-row items-center justify-between px-4 py-3">
+    <div className="bg-accent">
+      <div className="text-base-300 container mx-auto flex flex-row items-center justify-between px-4 py-3">
         <span>Ori from Japan</span>
 
         <ul className="flex flex-row gap-5">

@@ -1,7 +1,7 @@
 function FnnFooter() {
   return (
-    <div className="bg-neutral">
-      <div className="text-base-100 container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-10 md:flex-row md:py-6">
+    <div className="bg-accent">
+      <div className="text-base-300 container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-10 md:flex-row md:py-6">
         <span>Copyright © 2025 OrifromJapan</span>
 
         <ul className="flex flex-row gap-5">
