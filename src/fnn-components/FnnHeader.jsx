@@ -9,6 +9,9 @@ function FnnHeader() {
             <a href="/">Home</a>
           </li>
           <li>
+            <a href="/shop">Shop</a>
+          </li>
+          <li>
             <a href="">About</a>
           </li>
           <li>
