@@ -11,6 +11,7 @@ import Home from '@/pages/Home';
 import ProductPage from '@/pages/ProductPage';
 import MiniCart from '@/pages/MiniCart';
 import CartPage from '@/pages/CartPage';
+import Shop from '@/pages/Shop';
 
 import products from '@/data/x.json';
 
@@ -28,6 +29,7 @@ function App() {
           <main className="container mx-auto grow px-4">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
               <Route path="/product/:slug" element={<ProductPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route
