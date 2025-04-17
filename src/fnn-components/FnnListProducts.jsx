@@ -1,7 +1,11 @@
-import products from '@/data/x.json';
+import defaultProducts from '@/data/x.json';
 import FnnCard from '@/fnn-components/FnnCard';
 
-const FnnListProducts = ({ filter = {}, className }) => {
+const FnnListProducts = ({
+  products = defaultProducts,
+  filter = {},
+  className,
+}) => {
   const { limit, category, sale } = filter;
 
   let filteredProducts = products;
