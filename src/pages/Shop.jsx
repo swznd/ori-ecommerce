@@ -160,14 +160,14 @@ function Shop() {
                 : `Showing ${startIndex}–${endIndex} of ${totalProducts} products`}
             </p>
 
+            {totalProducts === 0 && (
+              <p className="mt-8 text-center text-white">No products found.</p>
+            )}
+
             <FnnListProducts
               products={paginatedProducts}
               className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
             />
-            {/* No result message hanya jika hasil filter kosong total */}
-            {totalProducts === 0 && (
-              <p className="mt-8 text-center text-white">No products found.</p>
-            )}
 
             {!isMobile && (
               <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
