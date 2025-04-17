@@ -20,6 +20,10 @@ function Shop() {
     setLoadCount(1);
   }, [category, sort]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [page]);
+
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const categories = [
