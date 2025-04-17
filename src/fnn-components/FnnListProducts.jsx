@@ -30,7 +30,7 @@ const FnnListProducts = ({
     'grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5';
 
   return (
-    <div className={className ?? defaultGridClass}>
+    <div className={className ? `grid ${className}` : defaultGridClass}>
       {displayedProducts.map((product) => (
         <FnnCard key={product.id} product={product} />
       ))}

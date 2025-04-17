@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
+import FnnListProducts from '@/fnn-components/FnnListProducts';
+
 import productsData from '@/data/x.json';
 
 function Shop() {
@@ -90,10 +92,10 @@ function Shop() {
 
   return (
     <>
-      <section className="bg-primary container mx-auto py-14">
+      <section className="container mx-auto py-14">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Filter */}
-          <div className="bg-pink-400 md:col-span-1">
+          <div className="md:col-span-1">
             <div className="rounded-box space-y-2 bg-white p-4">
               <h3 className="mb-2 text-lg font-semibold">Filter by Category</h3>
               <ul className="space-y-2">
@@ -132,7 +134,7 @@ function Shop() {
           </div>
 
           {/* Produk */}
-          <div className="bg-orange-400 md:col-span-3">
+          <div className="md:col-span-3">
             <div className="mb-4 flex justify-end">
               <select
                 value={sort}
@@ -152,21 +154,16 @@ function Shop() {
               </select>
             </div>
 
-            <p className="mb-2 text-sm text-white">
+            <p className="text-neutral mb-8 text-sm">
               {isMobile
                 ? `Showing ${endIndex} products`
                 : `Showing ${startIndex}–${endIndex} of ${totalProducts} products`}
             </p>
 
-            {/* Produk (sementara) */}
-            <ul className="space-y-2">
-              {paginatedProducts.map((product) => (
-                <li key={product.id} className="text-white">
-                  {product.name}
-                </li>
-              ))}
-            </ul>
-
+            <FnnListProducts
+              products={paginatedProducts}
+              className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4"
+            />
             {/* No result message hanya jika hasil filter kosong total */}
             {totalProducts === 0 && (
               <p className="mt-8 text-center text-white">No products found.</p>
